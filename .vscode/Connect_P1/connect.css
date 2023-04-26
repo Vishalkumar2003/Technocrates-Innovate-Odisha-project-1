@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo img{
+    width: 30%;
+    border-radius: 50px;
+    border: 3px solid white;
+   
+}
+.nevbar{
+    display: flex;
+}
+.nav-list{
+    width: 40%;
+    display: flex;
+    align-items: center; 
+   /* background-color: rgb(0, 0, 0); */
+}
+.name{
+    color: rgb(222, 163, 0);    
+}
+
+
+
+.feature{
+    width: 40%;
+    display: flex;
+    align-items:center; 
+    margin: 8px;
+    padding-left: 400px;
+   /* background-color: rgb(0, 0, 0); */
+}
+.feature li{
+    list-style: none;
+    text-align: right;
+    padding-top: 25px;
+    margin-left: 10px;
+    /* background-color: rgb(0, 0, 0); */
+}
+.feature li a{
+    text-decoration: none;
+    color:white;
+    padding: 20px;
+    
+}
+.feature li a:hover{
+    color:rgb(205, 184, 50);
+    
+}
+
+.rightNave{
+    width: 80%;
+    /* background-color: rgb(0, 0, 0); */
+    text-align: right;
+}
+.login{
+   width: 10%;
+    border-radius: 20px;
+    border: 2px solid rgb(110, 110, 110);
+    background-color: rgb(0, 0, 0);
+    color: white;
+   
+    
+}
+.background{
+    background: linear-gradient(120deg,#424242,#000000);;
+    background-size: cover;
+    background-blend-mode: darken;
+    /* height: 100vh; */
+    overflow: hidden;
+    font-family: montserrat;
+}
+.firstSection{
+    margin: 0;
+    padding: 0;
+    height: 120vh;
+    background: linear-gradient(120deg,#424242,#000000);;
+    background-size: cover;
+    background-blend-mode: darken;
+    overflow: hidden;
+    font-family: montserrat;
+    position:absolut;
+}

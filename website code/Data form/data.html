@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="data.css">
+
+  <title>TECHNOCRATS OFFECIAL</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="logo.jpg">
+      </div>
+      <div class="name">
+        <p>TECHNOCRATS</p>
+      </div>
+      <div class="items">
+
+        <a href=" ">Our Service</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="other">
+        <button><a href="../login form/login.html" target="_blank">log Out</a></button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="info">
+          <h1>Factor To Take Automatic Decision</h1>
+          <div class="instruction">
+            <p class="one">✦ When The TDS Amount Goes Over 500ppm
+              Then Our System Will Automatically Cut Your Power Supply And You Get Notified On Your Phone .
+            </p>
+            <p class="third">✦ In The Case Of Emergency You Able To Continue Your Water Supply Using
+              &nbsp;&nbsp;&nbsp;CONTROLE PORTAL .</p>
+          </div>
+          <div class="data_table">
+            <table>
+              <thead>
+                <td>Measurement Name</td>
+                <td>Good level</td>
+                <td>Bad Level</td>
+                <td>Live Data</td>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Water TDS</td>
+                  <td class="fix-measure">Less than 22.7</td>
+                  <td class="fix-measure">More than 10.65</td>
+                  <td class="var-data" id="tdsdata">Data panding...</td>
+                </tr>
+                <tr>
+                  <td>Water ph</td>
+                  <td class="fix-measure">Less than 7.2</td>
+                  <td class="fix-measure">More than 9.32</td>
+                  <td class="var-data" id="phdata">Data panding...</td>
+                </tr>
+                <tr>
+                  <td>Water Ions</td>
+                  <td class="fix-measure">Less than 480</td>
+                  <td class="fix-measure">More than 132</td>
+                  <td class="var-data" id="iondata">Data panding...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <div class="footer-dark">
+    <footer>
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="col-sm-6 col-md-3 item">
+            <h3>Services</h3>
+            <ul>
+              <li><a href=" ">Water Health Check System</a></li>
+              <li><a href=" ">Controle Automatically</a></li>
+              <li><a href=" ">Live Data Update On App</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3 item">
+            <h3>About</h3>
+            <ul>
+              <li><a href=" ">Company</a></li>
+              <li><a href=" ">Team</a></li>
+              <li><a href=" ">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-md-3 item">
+            <h3>Team Meamber's</h3>
+            <ul>
+              <li><a href="mohittripathy8@gmail.com">Mohit kumar tripathy</a></li>
+              <li><a href="https://www.instagram.com/swagat_nayak_/">Swagat</a></li>
+              <li><a href="https://www.instagram.com/aastha.kumari192002/">Aastha</a></li>
+              <li><a href="https://www.instagram.com/vishal_kumar__17/">Vishal</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="down_footer">
+          <div class="contact">Our Social Media</div>
+          <div class="col item social"><a href="https://www.linkedin.com/in/vishal-kumar-513679243/">L<i
+                class="icon ion-social-facebook"></i></a><a href="https://www.facebook.com/vishal.kumar.its">f<i
+                class="icon ion-social-twitter"></i></a><a href="https://twitter.com/unece_water?lang=en">G<i
+                class="icon ion-social-snapchat"></i></a><a href="https://www.instagram.com/vishal_kumar__17/">I<i
+                class="icon ion-social-instagram"></i></a></div>
+        </div>
+        <p class="copyright">Copyright Reservrd Team TECHNOCRATS © 2023</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    let phdata = document.getElementById("phdata");
+    let iondata = document.getElementById("iondata");
+    let tdsdata = document.getElementById("tdsdata");
+
+    function getRandomInt(max, range) {
+      return Math.floor((Math.random() * max) + range);
+    }
+    let i=0;
+    setInterval(function(){
+       if(i<=10){
+
+         tdsdata.innerText=getRandomInt(11,90 );
+         phdata.innerText=getRandomInt(11, 5);
+         iondata.innerText=getRandomInt(16, 30);
+         //  setInterval(function () {
+           //    tdsdata.innerText=getRandomInt(11,350 );
+           //    phdata.innerText=getRandomInt(11, 89);
+           //    iondata.innerText=getRandomInt(16, 98);
+           //   }, 700);
+          }
+          else{
+            tdsdata.innerText=getRandomInt(11,420 );
+            phdata.innerText=getRandomInt(11, 89);
+            iondata.innerText=getRandomInt(16, 98);
+        //  setInterval(function () {
+        //    tdsdata.innerText=getRandomInt(11,90 );
+        //    phdata.innerText=getRandomInt(11, 5);
+        //    iondata.innerText=getRandomInt(16, 30);
+        //   }, 700);
+       }
+       i++;
+    },1000);
+ecar
+    phdata.innerText = "Data Loading..";
+    iondata.innerText = "Data Loading...";
+    tdsdata.innerText = "Data Loading...";
+
+  </script>
+</body>
+
+</html>
